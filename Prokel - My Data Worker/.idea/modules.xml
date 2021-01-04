@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Prokel_-_My_Data_Worker.iml" filepath="$PROJECT_DIR$/.idea/modules/Prokel_-_My_Data_Worker.iml" group="Prokel_-_My_Data_Worker" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Prokel - My Data Worker/app" />
+    </modules>
+  </component>
+</project>

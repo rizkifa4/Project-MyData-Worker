@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.UbahPegawaiActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ubah_pegawai_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:padding="16dp">
+
+            <!--Nama-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/ubah_pegawai_edittext_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Nama" />
+
+            <!--Jenis Kelamin-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Jenis Kelamin" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ubah_pegawai_radiobutton_laki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Laki-laki" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/ubah_pegawai_radiobutton_perempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Perempuan" />
+            </RadioGroup>
+
+            <!--agama-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Agama:" />
+
+            <Spinner
+                android:id="@+id/ubah_pegawai_spinner_agama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--keahlian-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Keahlian : " />
+
+            <CheckBox
+                android:id="@+id/ubah_pegawai_checkbox_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Web Programmer" />
+
+            <CheckBox
+                android:id="@+id/ubah_pegawai_checkbox_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Mobile Programmer" />
+
+            <CheckBox
+                android:id="@+id/ubah_pegawai_checkbox_dekstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Dekstop Programmer"/>
+
+            <!--Kontak-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Kontak:" />
+
+            <EditText
+                android:id="@+id/ubah_pegawai_edittext_kontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kontak" />
+
+            <!--Email-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Email:" />
+
+            <EditText
+                android:id="@+id/ubah_pegawai_edittext_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email" />
+
+            <!--Foto-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Foto:"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/ubah_pegawai_button_add_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="pilih...." />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ubah_pegawai_imageview_foto"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+            <!--Level-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Level"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginTop="8dp"/>
+
+            <RadioGroup
+                android:id="@+id/ubah_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ubah_pegawai_radiobutton_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Admin" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/black" />
+
+                <RadioButton
+                    android:id="@+id/ubah_pegawai_radiobutton_pegawai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Pegawai" />
+            </RadioGroup>
+
+            <!--garis bawah-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+                <!--tombol batal-->
+                <Button
+                    android:id="@+id/ubah_pegawai_button_batal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Batal"
+                    android:layout_margin="8dp"/>
+
+                <!--tombol simpan-->
+                <Button
+                    android:id="@+id/ubah_pegawai_button_simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="PILIH SALAH SATU"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:drawablePadding="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:text="EDIT"
+            android:gravity="center_vertical"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@android:drawable/ic_delete"
+            android:drawablePadding="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:text="DELETE"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
